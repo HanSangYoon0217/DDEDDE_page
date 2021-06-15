@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>뜨뜨뜨뜨</title>
+	<link href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <header>
+            <div id="logo">
+                <a href="index.html">
+                    <h1>뜨뜨뜨뜨</h1>
+                </a>
+            </div>
+            <nav>
+                <ul id="topMenu">
+                    <li><a href="profile.html">프로필</a></li>
+                    <li><a>게임 이력<span></span></a>
+                        <ul>
+                            <li><a href="battleground.html">배틀그라운드</a></li>
+                            <li><a href="overwatch.html">오버워치</a></li>
+                            <li><a href="lol.html">리그오브레전드</a></li>
+                        </ul>
+                    </li>
+                    <li><a>방송 관련<span></span></a>
+                        <ul>
+                            <li><a href="broadcasting.html">방송 정보</a></li>
+                            <li><a href="reaction.html">후원 리액션</a></li>
+                            <li><a href="extratalk.html">기타 여담</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="accident.html">논란 및 사고</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="slideShow">
+            <div id = "slides">
+                <img src="image1.jpg" alt="">
+                <img src="image2.jpg" alt="">
+                <img src="image3.jpg" alt="">
+            </div>
+        </div>
+        <div id="contents">
+            <div id="tabMenu">
+                <input type="radio" id="tab1" name="tabs" checked>
+                <label for="tab1">수상경력</label>
+                <input type="radio" id="tab2" name="tabs">
+                <label for="tab2">뜨뜨사진</label>
+
+            <div id="notice" class="tabContent">
+                <h2>수상경력입니다.</h2>
+                <ul>
+                    <li>2018년 2월 28일 베스트BJ 선정</li>
+                    <li>2018년 12월 28일 아프리카TV BJ대상 배틀그라운드 부문 수상</li>
+                    <li>2019년 5월 28일 파트너BJ 선정</li>
+                    <li>2019년 12월 27일 아프리카TV BJ대상 배틀그라운드 부문 수상</li>
+                    <li>2020년 12월 24일 아프리카TV BJ대상 배틀그라운드 부문 수상</li>
+                </ul>
+            </div>
+            <div id="gallery" class="tabContent2">
+                <h2>잘생긴 뜨뜨뜨뜨</h2>
+                <ul>
+                    <li><img src="image-1.jpg"></li>
+                    <li><img src="image-2.jpg"></li>
+                    <li><img src="image-3.jpg"></li>
+                </ul>
+            </div>
+        </div>
+            <div id="links">
+                <ul>
+                    <li>
+                        <a href="https://bj.afreecatv.com/seokwngud" onclick="return query1()">
+                            <span id="symbolic-icon1"></span>
+                            <p>방송국 가기</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCHxKSivB6JLZ1SEMdxd1fAg" onclick="return query2()">
+                            <span id="symbolic-icon2"></span>
+                            <p>유튜브 가기</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/ddeuddeu/" onclick="return query3()">
+                            <span id="symbolic-icon3"></span>
+                            <p>인스타그램</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <footer>
+            <div id="bottomMenu">
+                <ul>
+                    <li><a id ="kangwon" onclick="change()">Kangwon National Univ</a></li>
+                    <li><a>202012336</a></li>
+                    <li><a>한상윤</a></li>
+                    <li><a>웹프로그래밍</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <script src="slideshow.js">
+    </script>
+</body>
+</html>

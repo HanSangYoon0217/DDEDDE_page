@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#container {
+    margin: 0 auto;
+    width: 1200px;
+}
+header {
+    width: 100%;
+    height: 100px;
+}
+header a {
+    text-decoration: none;
+}
+#logo {
+    float: left;
+    width: 200px;
+    height: 100px;
+    line-height: 50px;
+    padding-left: 50px;
+    background-color: aliceblue;
+}
+#logo h1 {
+    font-family: 'Nanum Pen Script', cursive;
+    font-weight: 700;
+    font-size: 50px;
+    color: black;
+    text-shadow: 0 -1px 0 #222;
+}
+nav {
+    float: right;
+    width: 950px;
+    height: 60px;
+    background-color: azure;
+    padding-top: 40px;
+}
+nav ul {
+    list-style: none;
+}
+#topMenu {
+    height: 60px;
+}
+#topMenu > li {
+    float: left;
+    position: relative;
+}
+#topMenu > li > a{
+    display: block;
+    color: skyblue;
+    font-weight: 600;
+    text-shadow: 0 1px #07c;
+    padding: 0px 60px;
+}
+#topMenu > li > a > span {
+    font-size : 0.5em;
+}
+#topMenu > li > a:hover {
+    color : red;
+}
+#topMenu > li > ul {
+    display: none;
+    position: absolute;
+    width: 160px;
+    background-color: white;
+    left: 0;
+    margin: 0;
+}
+#topMenu > li > ul > li {
+    padding: 10px 10px 10px 10px;
+}
+#topMenu > li > ul > li > a {
+    font-size: 14px;
+    padding: 10px;
+    color: black;
+}
+#topMenu > li:hover > ul {
+    display: block;
+    z-index: 10;
+}
+#topMenu > li > ul > li > a:hover {
+    color: aquamarine;
+}
+#slideShow {
+    clear: both;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+#slides {
+    position: absolute;
+}
+#slides > img {
+    width: 220%;
+    float: left;
+    height: 500px;
+}
+#contents {
+    width: 100%;
+    height: 300px;
+}
+#tabMenu {
+    float: left;
+    width: 600px;
+    height: 100%;
+    background-color: floralwhite;
+}
+#tabMenu input[type="radio"] {
+    display: none;
+}
+.tabContent {
+    display:none;
+}
+.tabContent2 {
+    display:none;
+}
+#tabMenu label {
+    display: inline-block;
+    margin: 0 0;
+    padding: 15px 25px;
+    font-weight: 600;
+    text-align: center;
+    color: #aaa;
+    border: 1px solid transparent;
+}
+#tabMenu label:hover {
+    color: violet;
+    cursor: pointer;
+}
+#tabMenu input:checked + label {
+    color: #b00;
+    border: 1px solid #ddd;
+    background-color: whitesmoke;
+}
+.tabContent {
+    padding: 20px 0 0;
+    border-top: 1px solid whitesmoke;
+}
+.tabContent2{
+    padding: 20px 0 0;
+    border-top: 1px solid whitesmoke;
+}
+.tabContent h2 {
+    display: none;
+}
+#notice ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+#notice ul li{
+    font-size: 16px;
+    line-height: 2.5;
+}
+#gallery ul li {
+    width: 30%;
+    display: inline-block;
+}
+.tabContent2 h2{
+    display: none;
+}
+.tabContent2 img {
+    width: 90%; 
+    padding: 5px 0px 5px 0px;
+    box-sizing: border-box;
+}
+#tab1:checked ~ #notice,
+#tab2:checked ~ #gallery {
+    display: block;
+}
+#links {
+    float: right;
+    width: 600px;
+    height: 100%;
+    background-color: blanchedalmond;
+}
+#links ul {
+    padding: 0;
+    overflow: hidden;
+    list-style-type: none;
+}
+#links ul li {
+    float: left;
+    width: 33%;
+    text-align: center;
+    margin: 10px 0;
+}
+#links ul li a span {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    border: 1px solid #ddd;
+    line-height: 150px;
+    margin-top: 30px;
+}
+#symbolic-icon1 {
+    background-image:url('afreeca.jpg');
+}
+#symbolic-icon2 {
+    background-image:url('youtube.jpg');
+}
+#symbolic-icon3 {
+    background-image:url('instagram.jpg');
+}
+#links ul li a p {
+    margin-top: 15px;
+    font-weight: 600;
+    color: #666;
+}
+footer {
+    width: 100%;
+    height: 100px;
+}
+#bottomMenu {
+    width: 100%;
+    height: 20px;
+    border-top: 2px solid #222;
+}
+#bottomMenu ul {
+    margin-top: 15px;
+    list-style-type: none;
+}
+#bottomMenu ul li {
+    float: left;
+    position: relative;
+    padding: 5px 80px;
+    border-right: 1px solid #ddd;
+}
+#bottomMenu ul li:last-child {
+    border-right: none;
+}
+#bottomMenu ul li a, #bottomMenu ul li a:visited {
+    font-size: 15px;
+    color: #666;
+}
+#basic {
+    display: inline-block;
+}
+#information1 {
+    font-size: 30px;
+    background-color: aliceblue;
+    font-family: 'Nanum Pen Script', cursive;
+}
+#information1 ul li {
+    padding-bottom: 15px;
+}
+#information2 {
+    font-size: 30px;
+    background-color: sandybrown;
+    font-family: 'Nanum Pen Script', cursive;
+}
+#information2 ul li {
+    padding-bottom: 25px;
+}
+#information3 {
+    font-size: 20px;
+    background-color: seashell;
+}
+#information3 ol li {
+    padding-bottom: 25px;
+}
